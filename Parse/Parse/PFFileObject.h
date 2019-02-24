@@ -132,6 +132,14 @@ __attribute__((unavailable("PFFile was renamed to PFFileObject. Please use it in
  */
 + (instancetype)fileObjectWithData:(NSData *)data contentType:(nullable NSString *)contentType;
 
+/**
+CUSTOM ADDITION MADE BY ME (GORDON MCKEE)
+
+Exposing the instance method which creates file from URL
+*/
++ (instancetype)fileWithName:(NSString *)name url:(NSString *)url;
+
+
 ///--------------------------------------
 #pragma mark - File Properties
 ///--------------------------------------
